@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+/* Usually, I would use normalize.css or whatever hot reset I've read about recently,
+ * but they seem like overkill for this project.
+ */
+* {
+    // it's rare that I need any other box-sizing option.
+    box-sizing: border-box;
+}
