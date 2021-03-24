@@ -11,7 +11,11 @@ I made two tooling choices before begining the project:
 - **Angluar CLI** is the recommended tool for setting up and building Angular projects. The old Angular Quickstart is available, but deprecated, and attempting to roll my own setup with Webpack of another bundler seemed like overkill. I also find the ease of generating componentes encourages me to write smaller ones.
 - **SCSS** for preprocessing CSS. I like to use variables, nesting, and mixins.
 
+### Project Organization
 
+#### Why Modules?
+
+I'm pretending this exercise is a real application meant for production. I expect it to grow over time. Maybe the customer will want to introducing more views, or routing. Using modules now will make keeping organized as I add additional features easier.
 
 ## Development server
 
