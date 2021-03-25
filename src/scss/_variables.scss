@@ -1,0 +1,27 @@
+// Colors - extracted using the eyedropper tool in Photoshop.
+$teal: #50e3c2;
+$gray: #2f3237;
+$dark-gray: #222222;
+$off-white: #f2f1ef;
+$white: #fff;
+
+$color-brand-primary: $teal;
+$color-body-background: $off-white;
+$color-header-background: $dark-gray;
+
+$color-font-primary: $gray;
+$color-font-secondary: $white;
+
+// Fonts
+/**
+  * This may look a little verbose for one font, but again, I'm pretending this
+  * is a real customer engagement. If the customer decides they want a different
+  * font for body text than headings, this will make it easier to implement.
+ */
+
+ // I'm including system fonts just incase.
+$fonts-sans-serif: Lato, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+$body-font: $fonts-sans-serif;
+$heading-font: $fonts-sans-serif;
+  

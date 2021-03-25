@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+
+.site-header {
+    height: 53px;
+    width: 100%;
+    background-color: $color-header-background;
+}
+
+.site-header-inner {
+    @include center-container;
+    padding: 15px 25px;
+}
+
+  
