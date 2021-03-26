@@ -1,12 +1,21 @@
 @import "variables";
 @import "utils";
+@import "buttons";
 
 
 @font-face {
-    font-family: Lato;
-    src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
-  }
+  font-family: Lato;
+  src: url(assets/fonts/Lato-Regular.ttf) format("truetype");
+        font-weight: 400;
+        font-style: normal;
+}
 
+@font-face {
+    font-family: Lato;
+    src: url(assets/fonts/Lato-Light.ttf) format("truetype");
+         font-weight: 300;
+         font-style: normal;
+}
 /* Usually, I would use normalize.css or whatever hot reset I've read about recently,
  * but they seem like overkill for this project.
  */
@@ -20,6 +29,7 @@ body {
   background-color: $color-body-background;
   color: $color-font-primary;
   font-family: $body-font;
+  font-size: $font-size-base;
 }
 
 h1, h2, h3, h4, h5, h6 {

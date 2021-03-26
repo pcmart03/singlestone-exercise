@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+
+.hero-content {
+    position: absolute;
+    top: 335px;
+    padding-left: 35px;
+    color: $color-font-secondary;
+}
+
+.hero-large-text {
+    @include h1;
+}
+
+.hero-mid-text {
+    @include h3;
+}
+
+.hero-blurb-text {
+    @include h4;
+    max-width: 480px;
+    margin: 30px 0;
+}
+  
+.hero-headline {
+    margin-bottom: 10px;
+} 

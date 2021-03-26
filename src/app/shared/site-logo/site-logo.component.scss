@@ -1,8 +1,7 @@
 @import "variables";
 
 .site-logo {
-    display: block;
-    height: 50px;
+    display: inline-block;
     width: 150px;
     svg {
         fill: $color-brand-primary;

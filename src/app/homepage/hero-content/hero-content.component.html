@@ -1,1 +1,7 @@
-<p>hero-content works!</p>
+<div class="hero-content" *ngIf="content$ | async as content">
+    <div class="hero-mid-text hero-headline">{{ content.headline }}</div>
+    <div class="hero-large-text">{{ content.largeLine1 }}</div>
+    <div class="hero-large-text">{{content.largeLine2 }}</div>
+    <div class="hero-blurb-text"><p [innerHTML]='content.blurb'></p></div>
+    <div><a href="#" class="btn-primary">{{ content.callToAction | uppercase }}</a></div>
+</div>

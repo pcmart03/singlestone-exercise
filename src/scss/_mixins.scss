@@ -1,4 +1,42 @@
+@import "variables";
+
+@mixin button {
+    display: inline;
+    appearance: button;
+    text-decoration: none;
+    height: 40px;
+    width: 192px;
+    border-radius: 20px;
+    transition: background-color 500ms ease-in-out;
+    font-size: $font-size-h5;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    &:link, &:visited, &:active, &:hover {
+        color: $color-font-primary;
+    }
+}
+
+
 @mixin center-container {
     width: 75%;
     margin: 0 auto;
 }
+
+@mixin h1 {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-light;
+}
+
+@mixin h2 {
+    font-size: $font-size-h2;
+}
+
+@mixin h3 {
+    font-size: $font-size-h3;
+}
+
+@mixin h4 {
+    font-size: $font-size-h4;
+}
+
