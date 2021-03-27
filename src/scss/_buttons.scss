@@ -4,6 +4,8 @@
 .btn-primary {
     @include button;
     background-color: $color-brand-primary;
+    
+    // I hope using Sass's color functions is still in the spirit of pure css.
     &:hover {
         background-color: lighten($color-brand-primary, 20%);
     }

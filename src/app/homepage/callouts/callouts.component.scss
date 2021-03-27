@@ -1,0 +1,22 @@
+@import "mixins";
+
+.callouts-heading-row {
+    text-align: center;
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.callouts-inner {
+    @include center-container;
+    padding: 0 25px;
+}
+
+.callouts-row {
+    display: flex;
+}
+
+.callout-wrap {
+    margin-top: 50px;
+    width: 100%;
+}

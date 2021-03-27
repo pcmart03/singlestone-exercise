@@ -8,7 +8,7 @@
     width: 192px;
     border-radius: 20px;
     transition: background-color 500ms ease-in-out;
-    font-size: $font-size-h5;
+    font-size: $font-size-h6;
     font-weight: bold;
     text-align: center;
     line-height: 40px;
@@ -40,3 +40,10 @@
     font-size: $font-size-h4;
 }
 
+@mixin h5 {
+    font-size: $font-size-h5;
+}
+
+@mixin h6{
+    font-size: $font-size-h6;
+}

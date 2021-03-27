@@ -1,0 +1,8 @@
+<section *ngIf="callouts$ | async as callouts" class="callout-wrap">
+    <div class="callouts-inner">
+        <div class="callouts-heading-row"><h2>How It Works</h2></div>
+        <div class="callouts-row">
+            <app-callout *ngFor="let callout of callouts"></app-callout>
+        </div>
+    </div>
+</section>
