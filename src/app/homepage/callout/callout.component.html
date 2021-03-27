@@ -1,1 +1,5 @@
-<p>callout works!</p>
+<div class="callout-wrap">
+<div class="callout-step-number">{{content.stepNumber | formatStep}}</div>
+<div class="callout-title">{{ content.title | uppercase }}</div>
+<div class="callout-content"><p>{{ content.body }}</p></div>
+</div>

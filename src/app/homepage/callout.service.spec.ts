@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { CalloutService } from './callout.service';
 
 describe('CalloutService', () => {
+  let httpClientSpy: { get: jasmine.Spy };
   let service: CalloutService;
   let steps= [
     {"id": "d11b10ba-1cd8-48f8-93eb-454b716fd5a0",
@@ -66,8 +67,8 @@ describe('CalloutService', () => {
   ]
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(CalloutService);
+    httpClientSpy = jasmine.createSpyObj('HttpClient', ['get'])
+    service = new CalloutService(httpClientSpy as any);
   });
 
   it('should be created', () => {
