@@ -39,3 +39,11 @@ $font-size-h6: 1.125em;   //18px
 $line-height-base: 1.375em; //22px;
 $line-height-h1: 1.1818181818181819em; //65px
 $line-height-h5: 1.35em; // 27px;
+
+// Breakpoints
+$tablet-width: 700px;
+$desktop-width: 1024px;
+
+
+//Resolution Query
+$high-res: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)';

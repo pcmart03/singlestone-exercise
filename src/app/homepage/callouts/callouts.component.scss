@@ -16,6 +16,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include tablet {
+        flex-wrap: wrap;
+    }
 }
 
 .callouts-wrap {
@@ -29,5 +38,13 @@
 
     &:last-child {
         width: 280px;
+
+        @include tablet {
+            width: 45%
+        }
+    }
+
+    @include tablet {
+        width: 45%
     }
 }

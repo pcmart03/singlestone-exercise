@@ -6,10 +6,18 @@
     top: 365px;
     padding-left: 35px;
     color: $color-font-secondary;
+
+    @include phone {
+        top: 120px;
+        padding: 0 10px; 
+    }
 }
 
 .hero-large-text {
     @include h1;
+    @include phone {
+        margin-bottom: 15px;
+    }
 }
 
 .hero-mid-text {
