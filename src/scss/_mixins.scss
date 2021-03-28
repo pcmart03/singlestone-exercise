@@ -13,8 +13,8 @@
     }
 }
 
-@mixin phone-and-tablet {
-    @media screen and (max-width: #{$desktop-width}) {
+@mixin desktop {
+    @media screen and (min-width: #{$desktop-width}) {
         @content;
     }
 }
@@ -45,12 +45,12 @@
 
 
 @mixin center-container {
-    width: 75%;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
 
-    @include phone-and-tablet {
-        width: 100%;
+    @include desktop {
+        width: 75%;
     }
 }
 

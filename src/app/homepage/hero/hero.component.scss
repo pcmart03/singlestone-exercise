@@ -3,6 +3,13 @@
 .hero-wrap {
     width: 100%;
     height: 850px;
+    /**
+     * I liked the way the difference screen sizes cropped this image.
+     * And because it was the only image on the page, I didn't feel too
+     * worried about the size for mobile users. However, if I were working
+     * with a designer, I would have asked for intentionally cropped images
+     * for smaller screens.
+     */
     background-image: url(/assets/images/photo-couch_opt_high.jpg);
     background-position: top;
     background-repeat: no-repeat;
@@ -13,6 +20,7 @@
     }
 
     @include tablet {
+        // I didn't like the way the image cropped the tv, so I focused it on the kids.
         background-position-x: -500px; 
     }
 }
