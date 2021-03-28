@@ -19,6 +19,12 @@
     }
 }
 
+@mixin large-desktop {
+    @media screen and (min-width: #{$large-desktop-width}) {
+        @content;
+    }
+}
+
 @mixin high-res {
     @media screen and #{$high-res} {
         @content;

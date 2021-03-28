@@ -23,6 +23,10 @@
         // I didn't like the way the image cropped the tv, so I focused it on the kids.
         background-position-x: -500px; 
     }
+    @include large-desktop {
+        background-image: url(/assets/images/photo-couch_2x_opt.jpg);
+        height: 1030px;
+    }
 }
 
 .hero-inner {

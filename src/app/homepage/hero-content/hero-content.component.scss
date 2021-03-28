@@ -11,6 +11,10 @@
         top: 120px;
         padding: 0 10px; 
     }
+
+    @include large-desktop {
+        top: 480px;
+    }
 }
 
 .hero-large-text {

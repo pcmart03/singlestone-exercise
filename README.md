@@ -15,7 +15,9 @@ I made two tooling choices before begining the project:
 
 #### Why Modules?
 
-I'm pretending this exercise is a real application meant for production. I expect it to grow over time. Maybe the customer will want to introducing more views, or routing. Using modules now will make keeping organized as I add additional features easier.
+I'm pretending this exercise is a real application meant for production. I expect it to grow over time. Maybe the customer will want to introducing more views, or routing. Using modules now will make keeping organized as we add additional features easier.
+
+
 
 ## Development server
 

@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators'
 import { environment } from '../../environments/environment';
 
+import {VersionedContent, Step, SimpleStep} from "../interfaces/steps";
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class CalloutService {
       this.formatData = this.formatData.bind(this);
    }
 
-   getCallouts(): Observable<any[]> {
+   getCallouts(): Observable<SimpleStep[]> {
     return this.http.get(environment.apiURL).pipe(map(res => this.formatData(res as any[])))
    }
   
@@ -24,7 +25,7 @@ export class CalloutService {
    * @param data 
    * @returns a sorted array of simplified step objects.
    */
-  formatData(data: any[]) {
+  formatData(data: Step[]): SimpleStep[] {
     const sorted = this.sortSteps(data);
     console.log(sorted.map(step => this.simplifyStep(step)))
     return sorted.map(step => this.simplifyStep(step));
@@ -35,7 +36,7 @@ export class CalloutService {
    * @param step 
    * @returns the versionContent object with the most recent effective date.
    */
-  getMostRecentContent(step: any): any {
+  getMostRecentContent(step: Step): VersionedContent {
     /**
      * My first version of getMostRecentContent used a forEach loop that would 
      * update a variable called "latest" when it found a newer version.  
@@ -68,7 +69,7 @@ export class CalloutService {
    *    body: string
    * }
    */
-  simplifyStep(step: any): any {
+  simplifyStep(step: Step): SimpleStep {
     const { stepNumber } = step;
     const { title, body } = this.getMostRecentContent(step);
     return { stepNumber, title, body }
@@ -79,7 +80,7 @@ export class CalloutService {
    * @param steps 
    * @returns an array of steps sorted by stepNumber
    */
-  sortSteps(steps: any[]): any[] {
+  sortSteps(steps: Step[]): Step[] {
     
     return [...steps].sort((a, b) => {
       if (a.stepNumber < b.stepNumber) {

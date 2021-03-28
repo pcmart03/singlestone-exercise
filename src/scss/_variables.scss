@@ -41,9 +41,9 @@ $line-height-h1: 1.1818181818181819em; //65px
 $line-height-h5: 1.35em; // 27px;
 
 // Breakpoints
-$tablet-width: 700px;
-$desktop-width: 1024px;
-
+$tablet-width:        700px;
+$desktop-width:       1024px;
+$large-desktop-width: 1920px; // This is the widest monitor I own.
 
 //Resolution Query
 $high-res: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)';
