@@ -23,7 +23,7 @@
     }
 
     @include tablet {
-        flex-wrap: wrap;
+        flex-wrap: wrap; // two rows of two callouts
     }
 }
 
@@ -36,15 +36,13 @@
     flex-grow: 0;
     width: 260px;
 
-    &:last-child {
-        width: 280px;
-
-        @include tablet {
-            width: 45%
-        }
+    @include tablet {
+        width: 45%;
     }
 
-    @include tablet {
-        width: 45%
+    @include desktop {
+        &:last-child {
+            width: 280px;
+        }
     }
 }
