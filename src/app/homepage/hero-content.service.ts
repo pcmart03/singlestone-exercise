@@ -12,7 +12,7 @@ const heroText = {
   headline: "New Games & Accessories",
   largeLine1: "Monthly packages.",
   largeLine2: "Excitement delivered daily.",
-  blurb: "What's the best way to shop for the latest video games and peripherals? How about never shopping at all? You'll get new stuff on your door step \&mdash; every month.",
+  blurb: "What's the best way to shop for the latest video games and peripherals? How about never shopping at all? You'll get new stuff on your doorstep \&mdash; every month.",
   callToAction: "Get started"
 }
 

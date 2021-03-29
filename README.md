@@ -16,11 +16,11 @@ If you have not already, please install the [Angular CLI](https://cli.angular.io
 
 After downloading the code, run `npm install`.
 
-## Build and Deploy to Github Pages
+## Build and Deploy to GitHub Pages
 These instructions are based on the directions given in the [Angular documentation](https://angular.io/guide/deployment#deploy-to-github-pages). 
 
 1. Create and publish a `gh-pages` branch.
-2. Go to your Github project page and follow [these directions to publish from for docs folder](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch).
+2. Go to your GitHub project page and follow [these directions to publish from for docs folder](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch).
 3. If you have changed the name of your Github project, open the `package.json`  file update the `--base-href` option in the `deploy` script to match your project name.
 4. Run `npm run deploy`.
 5. In the `/docs` folder, create a copy of the `index.html` file and rename it `404.html`.
@@ -42,7 +42,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-**Note** This command will work, but I have created an npm script for deploying to Github Pages.
+**Note** This command will work, but I have created an npm script for deploying to GitHub Pages.
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
