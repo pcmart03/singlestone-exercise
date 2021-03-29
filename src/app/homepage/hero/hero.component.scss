@@ -1,4 +1,5 @@
 @import "mixins";
+@import "variables";
 
 .hero-wrap {
     width: 100%;
@@ -19,7 +20,7 @@
         background-image: url(../../../assets/images/photo-couch_2x_opt.jpg);
     }
 
-    @include tablet {
+    @media screen and (min-width: #{$tablet-width}) and (max-width: 813px) {
         // I didn't like the way the image cropped the tv, so I focused it on the kids.
         background-position-x: -500px; 
     }

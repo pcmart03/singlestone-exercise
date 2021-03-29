@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators'
+import { Observable, of } from 'rxjs';
+import { catchError, map } from 'rxjs/operators'
 import { environment } from '../../environments/environment';
 
 import {VersionedContent, Step, SimpleStep} from "../interfaces/steps";
@@ -17,7 +17,17 @@ export class CalloutService {
    }
 
    getCallouts(): Observable<SimpleStep[]> {
-    return this.http.get(environment.apiURL).pipe(map(res => this.formatData(res as any[])))
+    return this.http.get(environment.apiURL).pipe(
+      catchError(this.handleError<Step[]>("getCallouts", [])),
+      map(res => this.formatData(res as Step[]))
+      )
+   }
+
+   private handleError<T>(operation = 'operation', result?: T) {
+     return (error: any): Observable<T> => {
+        console.error(error);
+        return of(result as T);
+     }
    }
   
    /**
