@@ -27,7 +27,6 @@ export class CalloutService {
    */
   formatData(data: Step[]): SimpleStep[] {
     const sorted = this.sortSteps(data);
-    console.log(sorted.map(step => this.simplifyStep(step)))
     return sorted.map(step => this.simplifyStep(step));
   }
 

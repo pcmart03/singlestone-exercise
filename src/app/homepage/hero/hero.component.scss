@@ -10,13 +10,13 @@
      * with a designer, I would have asked for intentionally cropped images
      * for smaller screens.
      */
-    background-image: url(../../../assets/images/photo-couch_opt_high.jpg);
+    background-image: url(/photo-couch_opt_high.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 
     @include high-res {
-        background-image: url(../../../assets/images/photo-couch_2x_opt.jpg);
+        background-image: url(/photo-couch_2x_opt.jpg);
     }
 
     @include tablet {
@@ -24,7 +24,7 @@
         background-position-x: -500px; 
     }
     @include large-desktop {
-        background-image: url(../../../assets/images/photo-couch_2x_opt.jpg);
+        background-image: url(/photo-couch_2x_opt.jpg);
         height: 1030px;
     }
 }
